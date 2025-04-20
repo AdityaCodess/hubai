@@ -24,8 +24,20 @@ body { background: #121212; color: #e0e0e0; }
 .card-icon { font-size: 2.5rem; margin-bottom: 15px; }
 .card-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 8px; }
 .card-desc { font-size: 1rem; color: #cccccc; text-align: center; margin-bottom: 20px; }
-.card-btn { background-color: #e94560; color: #ffffff; padding: 10px 20px; border: none; border-radius: 12px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; }
-.card-btn:hover { background-color: #ff2e4c; }
+/* Button styling - ensure white text on all link states */
+a.card-btn, a.card-btn:link, a.card-btn:visited, a.card-btn:hover, a.card-btn:active {
+    background-color: #e94560;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none !important;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+a.card-btn:hover { background-color: #ff2e4c; }
 .footer { text-align: center; color: #666666; margin: 60px 0 30px; }
 </style>
 """, unsafe_allow_html=True)
